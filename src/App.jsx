@@ -5,20 +5,22 @@ import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import Footer  from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
-import Hotels from "./pages/Hotels/Hotels";
+import HotelsList from "./pages/Hotels/Hotels";
 import Hotel from "./pages/Hotel/Hotel";
+import AboutUs from "./pages/AboutUs/About";
+import Teams from "./pages/Teams/Teams";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
-        <div className="hotels">
           <Routes>
             <Route path="/" />
-            <Route path="/hotels" element={<Hotels />} />
+            <Route path="/hotels-list" element={<HotelsList />} />
             <Route path="/hotels/:id" element={<Hotel />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path='/teams' element={<Teams />}/>
           </Routes>
-        </div>
       <Footer />
     </div>
   );

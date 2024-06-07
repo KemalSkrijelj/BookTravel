@@ -4,6 +4,16 @@
   box-shadow: 0 10px 20px rgba(47, 141, 255, 0.5);
   margin: 20px;
   padding: 20px;
+  img{
+    border-radius: 20px;
+  }
+  p{
+    margin: 0;
+    font-weight: bold;
+  }
+  h1{
+    font-size: 20px;
+  }
 }
 
 .card-price {
@@ -33,31 +43,45 @@
 .card-title {
   font-size: 1.4em;
   margin-bottom: 8px;
-  margin: 10px;
   color: black;
 }
 
-.card-content {
+.card-location {
   font-size: 1em;
   color: #201f1f;
-  margin-right: 190px;
-  /* margin-top: 14px; */
+  margin:0;
+  font-weight: bold;
 }
 
 .card-text {
   font-size: 1em;
   color: #201f1f;
-  margin-right: 195px;
-  /* margin-top: 14px; */
 }
 .card-total {
   font-size: 1em;
   color: #201f1f;
   margin-right: 190px;
-  /* margin-top: 12px; */
-}
+  }
+    input{
+      padding: 5px;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+    }
 
 .button-text {
   color: aliceblue;
   font-size: 14px;
+}
+.saveNights-btn{
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  background-color: #0F0F69;
+  margin-left: 15px;
+  border: none;
+}
+.saveNights-btn:hover{
+  border: #0F0F69;
 }

@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 
 export function Navbar() {
+
   return (
     <header >
       <div className="wrapper">
@@ -13,13 +14,13 @@ export function Navbar() {
         <div className="listing">
           <ul>
             <NavLink
-              to={"/hotels"}
+              to={"/hotels-list"}
               className={({ isActive }) =>
                 isActive ? "navlink-active" : "navlink"}> <li>Hotels</li></NavLink>
             <NavLink
-              to={"/list"}
+              to={"/teams"}
               className={({ isActive }) =>
-                isActive ? "navlink-active" : "navlink"}> <li>Your list</li></NavLink>
+                isActive ? "navlink-active" : "navlink"}> <li>Teams</li></NavLink>
             <NavLink
               to={"/apartmens"}
               className={({ isActive }) =>

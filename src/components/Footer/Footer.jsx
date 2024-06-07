@@ -10,7 +10,7 @@ function Footer ()  {
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
+            <li><a href="/about-us">About Us</a></li>
             <li><a href="/destinations">Destinations</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact Us</a></li>
@@ -19,7 +19,7 @@ function Footer ()  {
         <div className="about">
           <h3>About CheckInnNow</h3>
           <p>Enjoy hassle-free booking with secure payment options and instant confirmations.</p>
-          <a href="/about">Read More</a>
+          <a href="/about-us">Read More</a>
         </div>
         <div className="social-contact">
           <h3>Follow Us / Contact Us</h3>
