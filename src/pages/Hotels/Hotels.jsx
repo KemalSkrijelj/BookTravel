@@ -11,8 +11,12 @@ function HotelsList() {
           imageUrl={hotel.imageUrl}
           title={hotel.title}
           content={hotel.content}
+          stars={hotel.stars}
           total={hotel.total}
           city={hotel.city}
+          state={hotel.state}
+          country={hotel.country}
+          rates_from={hotel.rates_from}
           onClick={() => (window.location.href = `/hotels/${hotel.id}`)}
         />
       ))}

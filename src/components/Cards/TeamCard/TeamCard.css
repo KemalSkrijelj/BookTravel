@@ -1,0 +1,12 @@
+.teams-card {
+  background-color: rgb(231, 218, 218);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}

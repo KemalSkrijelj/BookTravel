@@ -3,11 +3,11 @@
     "id": 1,
     "imageUrl": "https://images.trvl-media.com/lodging/1000000/50000/41100/41081/18cfc8a0.jpg?impolicy=resizecrop&rw=1200&ra=fit",
     "title": "The Strat Hotel",
-    "stars": 4,
+    "stars": 5,
     "content": "Luxury Hotel And Spa",
     "total": 450,
     "city": "Koh Samet",
-    "state": "Rayong",
+    "state": "Ao Wong Duean",
     "country": "Thailand",
     "rates_from": 166
   },
@@ -15,14 +15,13 @@
     "id": 2,
     "imageUrl": "https://www.kayak.com/rimg/himg/df/4d/61/revato-64683-38003451-420608.jpg?width=968&height=607&crop=true",
     "title": "Treasure Island",
-    "stars": 4,
+    "stars": 5,
     "content": "Luxury Hotel And Spa",
-    "rating": "8.0/10",
     "total": 110,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Istanbul",
+    "state": "Beşiktaş",
+    "country": "Turkey",
+    "rates_from": 111
   },
   {
     "id": 3,
@@ -30,12 +29,11 @@
     "title": "The Venetian Resort",
     "stars": 5,
     "content": "Luxury resort",
-    "rating": "8.8/10",
     "total": 210,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Belek",
+    "state": "Acisu River",
+    "country": "Turkey",
+    "rates_from": 100
   },
   {
     "id": 4,
@@ -43,25 +41,23 @@
     "title": "Paramount Times Square",
     "stars": 4,
     "content": "Luxury Hotel And Spa",
-    "rating": "7.2/10",
     "total": 190,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "New York",
+    "state": "Southern Tier",
+    "country": "USA",
+    "rates_from": 99
   },
   {
     "id": 5,
     "imageUrl": "https://images.trvl-media.com/lodging/14000000/13410000/13400100/13400088/3ddc9447.jpg?impolicy=resizecrop&rw=1200&ra=fit",
     "title": "Four Points By Sheraton New York Downtown",
-    "stars": 3.5,
+    "stars": 4,
     "content": "Luxury Hotel without Spa",
-    "rating": "7.4/10",
     "total": 110,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Belgrade",
+    "state": "Knez Mihailova",
+    "country": "Serbia",
+    "rates_from": 95
   },
   {
     "id": 6,
@@ -69,38 +65,35 @@
     "title": "Arlo Midtown",
     "stars": 4,
     "content": "Luxury Hotel And Spa",
-    "rating": "9.2/10",
     "total": 300,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Atina",
+    "state": "Monastiraki",
+    "country": "Grecce",
+    "rates_from": 90
   },
   {
     "id": 7,
     "imageUrl": "https://images.trvl-media.com/lodging/1000000/30000/24300/24245/ab463c41.jpg?impolicy=resizecrop&rw=1200&ra=fit",
     "title": "Paramount Times Square",
-    "stars": 4,
+    "stars": 3,
     "content": "Luxury Hotel And Spa",
-    "rating": "7.2/10",
     "total": 210,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Belgrade",
+    "state": "Cara Dusana",
+    "country": "Serbia",
+    "rates_from": 89
   },
   {
     "id": 8,
     "imageUrl": "https://images.trvl-media.com/lodging/14000000/13410000/13400100/13400088/3ddc9447.jpg?impolicy=resizecrop&rw=1200&ra=fit",
     "title": "Four Points By Sheraton",
-    "stars": 3.5,
+    "stars": 3,
     "content": "hotel with",
-    "rating": "5.6/10",
     "total": 100,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Alanya",
+    "state": "Avsallar",
+    "country": "Turkey",
+    "rates_from": 88
   },
   {
     "id": 9,
@@ -108,11 +101,10 @@
     "title": "Arlo Midtown",
     "stars": 4,
     "content": "hotel with",
-    "rating": "6/10",
     "total": 180,
-    "city": "Koh Samet",
-    "state": "Rayong",
-    "country": "Thailand",
-    "rates_from": 166
+    "city": "Bodrum",
+    "state": "Ortakent",
+    "country": "Turkey",
+    "rates_from": 66
   }
 ]

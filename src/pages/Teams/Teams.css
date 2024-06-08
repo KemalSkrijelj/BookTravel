@@ -1,0 +1,14 @@
+
+.teams{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding-top:130px;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Teams/premier-league.jpg);
+}

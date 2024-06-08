@@ -2,17 +2,14 @@
 import "../../../common/hotels.json";
 import "./HotelCard.css";
 import { LiaHotelSolid } from "react-icons/lia";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaPeopleGroup, FaStar } from "react-icons/fa6";
 import { useState } from "react";
 
 function HotelCard(props) {
   const [input, setInput] = useState(1);
 
   const handleInputChanges = (e) => {
-    return setInput(e.target.value);
-  };
-  const setNight = (e) => {
-    console.log(e.target.value);
+     setInput(e.target.value);
   };
 
   return (
@@ -21,24 +18,27 @@ function HotelCard(props) {
       <h1 className="card-title">
         {props?.title}, {props?.content}{" "}
       </h1>
-      <p className="card-location">
-        <FaLocationDot />
-        {props?.city}
-      </p>
-      <p className="card-text">{props.total / 5}$/Night</p>
-
+      <div className="card-location">
+      <p>
+        <FaLocationDot className="location-icon" />
+        {props?.city}, {props?.state}, {props?.country}
+      </p></div>
+      
+      <div className="card-price">
       <input
         type="number"
         value={input}
         min={0}
         max={30}
-        onChange={() => handleInputChanges}
-      />
-      <button type="submit" className="saveNights-btn" onClick={setNight}>
-        Save nights
-      </button>
-      <p className="card-total">Total </p>
-      <button className="card-price" onClick={props.onClick}>
+        onChange={handleInputChanges}
+        placeholder="Unesi br"/>
+        <p className="card-text">{props.total * input}$ {input > 1  ? "Nights" : "Night"}</p>
+      </div>
+      <div className="card-rating">
+       <p>{props?.stars } <FaStar /></p> <p>{props?.rates_from} <FaPeopleGroup /> rated it</p>  
+      </div>
+
+      <button className="show-more" onClick={props.onClick}>
         <LiaHotelSolid className="icon" />
         <p className="button-text">Show Hotel</p>
       </button>

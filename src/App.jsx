@@ -9,13 +9,15 @@ import HotelsList from "./pages/Hotels/Hotels";
 import Hotel from "./pages/Hotel/Hotel";
 import AboutUs from "./pages/AboutUs/About";
 import Teams from "./pages/Teams/Teams";
+import { Home } from "./pages/Home/Home";
+
 
 function App() {
   return (
     <div className="app">
       <Navbar />
           <Routes>
-            <Route path="/" />
+            <Route path="/"element={<Home />} />
             <Route path="/hotels-list" element={<HotelsList />} />
             <Route path="/hotels/:id" element={<Hotel />} />
             <Route path="/about-us" element={<AboutUs />} />

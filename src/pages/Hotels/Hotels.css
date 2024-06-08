@@ -1,7 +1,13 @@
 .hotels {
   display: grid;
   width: 100%;
+  height: auto;
   justify-content: center;
   flex-direction: column;
   grid-template-columns: repeat(4, 1fr);
+  padding-top: 130px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Hotels/monte-carlo.webp);
 }
