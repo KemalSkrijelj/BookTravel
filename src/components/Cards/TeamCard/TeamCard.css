@@ -1,12 +1,35 @@
-.teams-card {
-  background-color: rgb(231, 218, 218);
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+.team-card {
   width: 90%;
-  height: 70px;
-  align-items: center;
+  background-color: #f6f4f7 ;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  align-content: center;
   justify-content: center;
-  color: blue;
+  border-radius: 15px;
+  margin: 20px;
+  position: relative;
+}
+.h2 {
+  color: black;
+  align-self: center;
+  }
+.p {
+  color: black;
+  align-self: center;
+}
+.ptext {
+  margin-left: 200px;
+  color: black;
+  grid-column: span 6;
+}
+.stats{
+  display: grid;
+  position: absolute;
+  top: 0%;
+  height: 30px;
+  color: black;
+  align-items: center;
+  grid-template-columns: 4.2fr 9fr 3.2fr 2.7fr 2fr 1fr ;
+  grid-template-rows: 1fr 3fr;
 }
