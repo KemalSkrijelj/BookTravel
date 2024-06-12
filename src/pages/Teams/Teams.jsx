@@ -6,7 +6,8 @@ import "./Teams.css";
 
 const Teams = () => {
   const [team, setTeam] = useState(teams);
-
+  const [extended, setExtended] = useState(null)
+ 
   const handleDeleteToggle = (id) => {
     const filteredTeams = team.filter((team) => team.id !== id);
     setTeam(filteredTeams);
@@ -14,7 +15,7 @@ const Teams = () => {
 
   useEffect(() => {
     const newTeams = teams.map((team) => {
-      const TeamID = Math.random(0, 1);
+      const TeamID = Math.random(0, 100000000000);
       return {
         ...team,
         id: TeamID,
@@ -28,6 +29,7 @@ const Teams = () => {
       {team.map((team, index) => (
         <TeamCard
           key={index}
+          id={team.id}
           position={team.position}
           team_name={team.team_name}
           points={team.points}
@@ -39,6 +41,9 @@ const Teams = () => {
           losses={team.losses}
           desc={team.desc}
           deleteItem={() => handleDeleteToggle(team.id)}
+          extended={extended}
+          setExtended={setExtended}
+
         />
       ))}
     </div>

@@ -4,32 +4,73 @@ import { useState } from "react";
 import "../../../common/teams.json";
 import "./TeamCard.css";
 import { FaBucket } from "react-icons/fa6";
+import { useEffect } from "react";
 
-function TeamCard(props) {
-  const [isActive, setIsActive] = useState(false);
+function TeamCard({
+  index,
+  id,
+  position,
+  team_name,
+  points,
+  matches,
+  wins,
+  draws,
+  losses,
+  desc,
+  deleteItem,
+  extended,
+  setExtended}) {
 
-  return (
+    const [closed, setClosed] = useState(true);
+    const [teamDescription, setTeamDescription] = useState("");
+  
+    //Hooks
+    useEffect(() => {
+      if (!closed) {
+        setTeamDescription(
+          "Ovaj tim je osnovan 1886. godine. Najtrofejniji je klub u engleskoj..."
+        );
+      } else {
+        setTeamDescription("");
+      }
+    }, [closed]);
+  
+    useEffect(() => {
+      if (extended !== null && extended !== id) {
+        setClosed(true);
+      }
+    }, [extended, id]);
+  
+    useEffect(() => {
+      if (!closed) {
+        setExtended(id);
+      } else {
+        setExtended(null);
+      }
+    }, [closed, id]);
+
+    return (
     <div
-      className={isActive ? `team-card` : `team-card`}
-      style={{ height: isActive ? "180px" : "120px" }}
+      className={!closed ? `team-card` : `team-card`}
+      style={{ height: !closed ? "180px" : "120px" }}
     >
       <h2 className="h2" style={{ marginLeft: "50px" }}>
-        {props.position} Pos
+        {position} Pos
       </h2>
-      <h2 className="h2">{props.team_name}</h2>
-      <p className="p">{props.matches}</p>
-      <p className="p">{props.wins} W</p>
-      <p className="p">{props.losses} L</p>
-      <p className="p">{props.draws} D</p>
-      <p className="p">{props.points}pts</p>
-      <button className="btn"  onClick={props.deleteItem}>
+      <h2 className="h2">{team_name}</h2>
+      <p className="p">{matches}</p>
+      <p className="p">{wins} W</p>
+      <p className="p">{losses} L</p>
+      <p className="p">{draws} D</p>
+      <p className="p">{points}pts</p>
+      <button className="btn"  onClick={deleteItem}>
         {" "}
         <FaBucket className="bucket" />
       </button>
-      <button onClick={() => setIsActive(!isActive)} className="btn">
-        {isActive ? "Show less" : "Show More"}
+      <button onClick={() => setClosed(!closed)} className="btn">
+        {!closed ? "Show less" : "Show More"}
       </button>
-      {isActive ? <p className="ptext">{props?.desc}</p> : null}
+      {!closed && <p className="ptext">{teamDescription}</p> }
     </div>
   );
 }
