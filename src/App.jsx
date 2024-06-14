@@ -5,12 +5,16 @@ import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import Footer  from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
+
 import HotelsList from "./pages/Hotels/Hotels";
 import Hotel from "./pages/Hotel/Hotel";
 import AboutUs from "./pages/AboutUs/About";
 import Teams from "./pages/Teams/Teams";
-import { Home } from "./pages/Home/Home";
+import FavList from "./pages/YourList/YourList";
+import Login from "./pages/Login/Login";
+import SignUp from "./pages/SignUp/SignUp";
 
+import { Home } from "./pages/Home/Home";
 
 function App() {
   return (
@@ -20,7 +24,10 @@ function App() {
             <Route path="/"element={<Home />} />
             <Route path="/hotels-list" element={<HotelsList />} />
             <Route path="/hotels/:id" element={<Hotel />} />
+            <Route path="/yourList"  element={<FavList />}/>
+            <Route path="/Login" element={<Login />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/signUp" element={<SignUp />} />
             <Route path='/teams' element={<Teams />}/>
           </Routes>
       <Footer />

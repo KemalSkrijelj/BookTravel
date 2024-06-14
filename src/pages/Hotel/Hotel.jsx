@@ -9,7 +9,6 @@ function Hotel() {
   const [isActive, setIsActive] = useState(false)
   const [input, setInput] = useState(1)
   const { id } = useParams();
-  console.log(hotels);
   const hotel = hotels.find((hotel) => hotel.id === +id)
    
   const colorHeart = () => {

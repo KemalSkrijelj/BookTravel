@@ -2,6 +2,10 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 export function Navbar() {
+
+  function sendToLoginPage  () {
+    window.location.href = '/yourList'
+  }
   return (
     <header className="header-nav">
       <div className="wrapper">
@@ -23,16 +27,16 @@ export function Navbar() {
                 isActive ? "navlink-active" : "navlink"} >{" "}<li>Teams</li></NavLink>
 
             <NavLink
-              to={"/apartmens"}
+              to={"/yourList"}
               className={({ isActive }) =>
-                isActive ? "navlink-active" : "navlink"}>{" "}<li>Apartmens</li></NavLink>
+                isActive ? "navlink-active" : "navlink"}>{" "}<li>Your List</li></NavLink>
             
             <NavLink
               to={"/about-us"}
               className={({ isActive }) =>
                 isActive ? "navlink-active" : "navlink"}>{" "}<li>About us</li></NavLink>
           </ul>
-          <button>Log in</button>
+          <NavLink to={"/Login"}><button onClick={() => sendToLoginPage}>Log in</button></NavLink>
         </div>
       </div>
     </header>
