@@ -6,8 +6,8 @@
   align-items: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(60, 59, 59, 1), rgba(0, 0, 0, 0.2)),
-    url(./login.jpg);
+  background-image: linear-gradient(rgba(60, 59, 59, 0.5), rgba(0, 0, 0, 0.2)),
+    url(./geometric-gradient-futuristic-background_23-2149116406.avif);
 }
 .signUpCard{
   z-index: 77;

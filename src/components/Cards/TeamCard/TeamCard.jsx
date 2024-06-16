@@ -50,6 +50,7 @@ function TeamCard({
     }, [closed, id]);
 
     return (
+      <>
     <div
       className={!closed ? `team-card` : `team-card`}
       style={{ height: !closed ? "180px" : "120px" }}
@@ -72,6 +73,7 @@ function TeamCard({
       </button>
       {!closed && <p className="ptext">{teamDescription}</p> }
     </div>
+    </>
   );
 }
 

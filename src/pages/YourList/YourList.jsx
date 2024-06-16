@@ -1,7 +1,10 @@
+import './YourList.css'
 
 const FavList = () => {
-  return(
+
+  return (
     <div>
+      <h1>Your List</h1>
     </div>
   )
 }
