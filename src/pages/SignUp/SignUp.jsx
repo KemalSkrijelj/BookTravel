@@ -45,8 +45,8 @@ const SignUp = () => {
      <div className="signUpCard">
         <h1>Sign Up</h1>
         <input name="email" id="email" type='email' placeholder='sebastian@gmail.com'/>
-        <input type="username" placeholder="Type your username "  maxLength={20} />
-        <input type="password" placeholder="**********" maxLength={30} />
+        <input type="username" placeholder="Type your username "  maxLength={20} minLength={8}/>
+        <input type="password" placeholder="**********" maxLength={30} minLength={8}/>
         
         <div className="checkBox-div">
           <input type="checkbox" />

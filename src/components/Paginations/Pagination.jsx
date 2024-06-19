@@ -15,16 +15,16 @@ const Pagination = (
 
   return (
     <div className="pagination">
-      <button className="pagination-btn" disabled={page === 1} onClick={() => {setPage(page - 1);  window.scrollTo(0,0) } }>
+      <button className="pagination-btn" disabled={page === 1} onClick={() => {setPage(page - 1) } }>
         {" "}
         <FaArrowLeft />
       </button>
       {arr.map((num) => (
-        <button className="pagination-btn" key={num} onClick={() => {setPage(num); window.scrollTo(0,0)}}>
+        <button className="pagination-btn" key={num} onClick={() => {setPage(num)}}>
           {num}
         </button>
       ))}
-      <button className="pagination-btn" disabled={page === 3} onClick={() => {setPage(page + 1);  window.scrollTo(0,0) } }>
+      <button className="pagination-btn" disabled={page === 3} onClick={() => {setPage(page + 1)} }>
         {" "}
         <FaArrowRight />{" "}
       </button>

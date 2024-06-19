@@ -3,6 +3,7 @@ import hotels from "../../common/hotels.json";
 import "./Hotels.css";
 import Pagination from "../../components/Paginations/Pagination";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function HotelsList() {
 
@@ -12,6 +13,13 @@ function HotelsList() {
   const numOfHotels = hotels.length
   //Num of Pages
   const numOfPages = Math.ceil(numOfHotels / numOfHotelPerPage)
+
+  useEffect(() => {
+   window.scrollTo({
+    top: 0,
+    behavior:"smooth"
+  })
+  }, [page])
   return (
     <>
     <div className="hotels">

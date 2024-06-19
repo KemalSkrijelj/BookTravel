@@ -31,10 +31,16 @@ export function Navbar() {
               className={({ isActive }) =>
                 isActive ? "navlink-active" : "navlink"}>{" "}<li>Your List</li></NavLink>
             
+            <NavLink to={'/quotes'}
+            className={({ isActive }) =>
+                isActive ? "navlink-active" : "navlink"}>{" "}<li>Quotes</li>
+            </NavLink>
+            
             <NavLink
               to={"/about-us"}
               className={({ isActive }) =>
                 isActive ? "navlink-active" : "navlink"}>{" "}<li>About us</li></NavLink>
+
           </ul>
           <NavLink to={"/Login"}><button onClick={() => sendToLoginPage}>Log in</button></NavLink>
         </div>

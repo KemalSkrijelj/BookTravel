@@ -13,6 +13,7 @@ import Teams from "./pages/Teams/Teams";
 import FavList from "./pages/YourList/YourList";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
+import Quotes from "./pages/Quotes/Quotes";
 
 import { Home } from "./pages/Home/Home";
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/signUp" element={<SignUp />} />
+            <Route path="quotes"  element={<Quotes />}/>
             <Route path='/teams' element={<Teams />}/>
           </Routes>
       <Footer />
