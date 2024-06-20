@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "author": "Albert Einstein",
+        "description": "Albert Einstein was a German-born theoretical physicist widely recognized for developing the theory of relativity, one of the two pillars of modern physics.",
+        "text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+        "date": "2024-06-20",
+        "image": "https://images.unsplash.com/photo-1461280360983-bd93eaa5051b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "author_image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.craiyon.com%2Fimage%2FZwmGSx4TTfKe6ne1r8lNEA&psig=AOvVaw2FAcHx5hhXkI5sTfvtQp19&ust=1718983807027000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDTtuu_6oYDFQAAAAAdAAAAABAE"
+    },
+    {
+        "id": 2,
+        "author": "Maya Angelou",
+        "description": "Maya Angelou was an American poet, memoirist, and civil rights activist. Her work discusses themes such as identity, racism, and family.",
+        "text": "You will face many defeats in life, but never let yourself be defeated.",
+        "date": "2024-06-19",
+        "image": "https://plus.unsplash.com/premium_photo-1717916843908-7bbee16bad20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Maya_Angelou%2C_Foto_del_congresso.jpg"
+    },
+    {
+        "id": 3,
+        "author": "Nelson Mandela",
+        "description": "Nelson Mandela was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999.",
+        "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        "date": "2024-06-18",
+        "image": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Nelson_Mandela%2C_1994.jpg"
+    },
+    {
+        "id": 4,
+        "author": "Walt Disney",
+        "description": "Walt Disney was an American entrepreneur, animator, and film producer. He co-founded The Walt Disney Company and created iconic characters such as Mickey Mouse.",
+        "text": "The way to get started is to quit talking and begin doing.",
+        "date": "2024-06-17",
+        "image": "https://images.unsplash.com/photo-1718744255138-ca1c77986098?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Walt_Disney_1946.JPG"
+    },
+    {
+        "id": 5,
+        "author": "Steve Jobs",
+        "description": "Steve Jobs was an American business magnate, industrial designer, and co-founder of Apple Inc. He played a pivotal role in the development of personal computers.",
+        "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+        "date": "2024-06-16",
+        "image": "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg"
+    },
+    {
+        "id": 6,
+        "author": "Eleanor Roosevelt",
+        "description": "Eleanor Roosevelt was an American political figure, diplomat, and activist. She served as First Lady of the United States from 1933 to 1945.",
+        "text": "The future belongs to those who believe in the beauty of their dreams.",
+        "date": "2024-06-15",
+        "image": "https://media.istockphoto.com/id/1297822057/photo/male-freelancer-listening-to-his-coworker-via-skype.webp?s=170667a&w=0&k=20&c=qYV_L9eyQBY4Vr0yqXRH0GlhAE3hLNHa-GEZuTKgQYE=",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Eleanor_Roosevelt_portrait_1933.jpg"
+    },
+    {
+        "id": 7,
+        "author": "John Lennon",
+        "description": "John Lennon was an English singer, songwriter, and peace activist who co-founded the Beatles, one of the most successful bands in history.",
+        "text": "Life is what happens when you're busy making other plans.",
+        "date": "2024-06-14",
+        "image": "https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/John_Lennon_1969_%28cropped%29.jpg/800px-John_Lennon_1969_%28cropped%29.jpg"
+    },
+    {
+        "id": 8,
+        "author": "Aristotle",
+        "description": "Aristotle was a Greek philosopher and polymath during the Classical period in Ancient Greece. He made significant contributions to various fields, including ethics and metaphysics.",
+        "text": "It is during our darkest moments that we must focus to see the light.",
+        "date": "2024-06-13",
+        "image": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Aristotle_Altemps_Inv8575.jpg"
+    },
+    {
+        "id": 9,
+        "author": "Mahatma Gandhi",
+        "description": "Mahatma Gandhi was an Indian lawyer, anti-colonial nationalist, and political ethicist who employed nonviolent resistance to lead India to independence from British rule.",
+        "text": "The best way to find yourself is to lose yourself in the service of others.",
+        "date": "2024-06-12",
+        "image": "https://media.istockphoto.com/id/1150316505/photo/stock-market-data.jpg?s=612x612&w=0&k=20&c=x0fl6dDrqE_5_Xo3jV1tvEhlCiQcUblDnnb_WlCKnd4=",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mohandas_Karamchand_Gandhi_1944.jpg"
+    },
+    {
+        "id": 10,
+        "author": "Confucius",
+        "description": "Confucius was a Chinese philosopher and teacher whose ideas have deeply influenced East Asian philosophy and culture. He emphasized personal and governmental morality, justice, and sincerity.",
+        "text": "It does not matter how slowly you go as long as you do not stop.",
+        "date": "2024-06-11",
+        "image": "https://images.unsplash.com/photo-1589561253898-768105ca91a8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "author_image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Confucius_Tang_Dynasty.jpg"
+    }
+  ]
+  

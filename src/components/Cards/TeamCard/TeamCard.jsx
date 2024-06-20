@@ -7,7 +7,6 @@ import { FaBucket } from "react-icons/fa6";
 import { useEffect } from "react";
 
 function TeamCard({
-  index,
   id,
   position,
   team_name,
@@ -16,7 +15,6 @@ function TeamCard({
   wins,
   draws,
   losses,
-  desc,
   deleteItem,
   extended,
   setExtended}) {
