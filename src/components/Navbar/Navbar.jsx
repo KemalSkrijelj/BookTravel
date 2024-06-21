@@ -15,6 +15,7 @@ export function Navbar() {
           </NavLink>
         </div>
         <div className="listing">
+          
           <ul>
             <NavLink
               to={"/hotels-list"}

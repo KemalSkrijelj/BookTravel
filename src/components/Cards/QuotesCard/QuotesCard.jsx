@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import './QuotesCard.css'
 import '../../../common/quotes.json'
@@ -20,6 +21,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { FaHeart } from 'react-icons/fa';
 
 
 const ExpandMore  = styled((props) => {
@@ -34,9 +36,15 @@ const ExpandMore  = styled((props) => {
 }));
 
  // eslint-disable-next-line react/prop-types
- const QuotesCard = ({ image,date,text,author,description,author_image}) => {
+ const QuotesCard = ({ image,date,text,author,description}) => {
 
+  const [isActive, setIsActive] = React.useState(false)
+  const [input, setInput] = React.useState(1)
   const [expanded, setExpanded] = React.useState(false);
+
+  const colorHeart = () => {
+    setIsActive(!isActive)
+   }
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -47,7 +55,7 @@ const ExpandMore  = styled((props) => {
     <Card sx={{marginLeft:"20px",  maxWidth: 345 , maxHeight:"40rem"}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[900] }} aria-label="recipe">
+          <Avatar  aria-label="recipe">
           </Avatar>
         }
         action={
@@ -71,7 +79,7 @@ const ExpandMore  = styled((props) => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+        <FaHeart onClick={colorHeart} className={isActive ? "heartClick" : "heart"} />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
