@@ -1,0 +1,9 @@
+.pagination-quotes {
+  width: 30%;
+  border-radius: 20px;
+  background-color: rgba(203, 203, 203, 0.4);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
