@@ -15,8 +15,6 @@ const Quotes = () => {
   };
   const [totalPages, setTotalPages] = useState(0);
 
-
-
   async function getQuotes  ()  {
     setIsLoading(true);
     try {

@@ -4,6 +4,7 @@ import hotels from "../../common/hotels.json";
 // import { CiHeart,CiLock,CiParking1 } from "react-icons/ci";
 import {  FaWifi, FaSwimmer,FaSpa, FaCity, FaStreetView, FaFlag, FaParking, FaPray, FaHeart } from "react-icons/fa";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function Hotel() {
   const [isActive, setIsActive] = useState(false)
@@ -18,6 +19,10 @@ function Hotel() {
     setInput(e.target.value);
  };
 
+ useEffect(() => {
+   localStorage.setItem (`Hotel sa id:${id}`, JSON.stringify({HotelName: hotel?.title}))
+ }, [isActive] )
+ 
   return(
   <div className="hotel">
     <div className="card-hotel">
