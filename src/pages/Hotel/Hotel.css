@@ -14,7 +14,7 @@
 }
 .card-hotel{
   display: flex;
-  width: 70%;
+  width: 60%;
   height: auto;
   flex-direction: column;
   justify-content: center;
@@ -56,13 +56,14 @@
     color: rgb(255, 234, 118);
     cursor: no-drop;
   }
-  .heart{
+  button:last-child{
     cursor: pointer;
+  }
+  .heart{
     color: white;
   }
   .heartClick{
     color: red;
-    cursor: pointer;
   }
 }
 .price-hotel{
