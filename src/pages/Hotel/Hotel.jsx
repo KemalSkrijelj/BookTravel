@@ -33,7 +33,7 @@ function Hotel() {
 }, [updatedFavoriteHotels]);
 
 const handleFavoriteToggle = () => {
-  if (!hotel) return; // Ensure hotel is defined before proceeding
+  if (!hotel) return; 
   if (!isFavoriteState) {
     const newFavoriteHotels = [...updatedFavoriteHotels, hotel.id];
     setUpdatedFavoriteHotels(newFavoriteHotels);
