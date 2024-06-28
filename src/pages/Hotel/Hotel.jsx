@@ -33,15 +33,14 @@ function Hotel() {
 }, [updatedFavoriteHotels]);
 
 const handleFavoriteToggle = () => {
-  if (!hotel) return; 
   if (!isFavoriteState) {
     const newFavoriteHotels = [...updatedFavoriteHotels, hotel.id];
     setUpdatedFavoriteHotels(newFavoriteHotels);
     setIsFavoriteState(true);
   } else {
     const newFavoriteHotels = updatedFavoriteHotels.filter((hotelId) => hotelId !== hotel.id);
-    setUpdatedFavoriteHotels(newFavoriteHotels);
     setIsFavoriteState(false);
+    setUpdatedFavoriteHotels(newFavoriteHotels);
   }
 };
 
