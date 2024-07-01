@@ -43,7 +43,7 @@ const SignUp = () => {
   return(
     <div className="SignUp-main">
      <div className="signUpCard">
-        <h1>Sign Up</h1>
+        <h2>Sign Up</h2>
         <input name="email" id="email" type='email' placeholder='sebastian@gmail.com'/>
         <input type="username" placeholder="Type your username "  maxLength={20} minLength={8}/>
         <input type="password" placeholder="**********" maxLength={30} minLength={8}/>
@@ -54,7 +54,7 @@ const SignUp = () => {
           We value your privacy and are committed to protecting your personal information.</p>
         </div>
         
-         <button onClick={validacija} className='signUp-btn' >Klikni</button>
+         <button onClick={validacija} className='signUp-btn' >SignUp</button>
         </div>
 
     </div>

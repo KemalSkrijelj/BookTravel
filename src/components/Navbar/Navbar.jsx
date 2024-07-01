@@ -43,7 +43,7 @@ export function Navbar() {
                 isActive ? "navlink-active" : "navlink"}>{" "}<li>About us</li></NavLink>
 
           </ul>
-          <NavLink to={"/Login"}><button onClick={() => sendToLoginPage}>Log in</button></NavLink>
+          <NavLink to={"/auth"}><button onClick={() => sendToLoginPage}>Log in</button></NavLink>
         </div>
       </div>
     </header>

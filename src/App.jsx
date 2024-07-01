@@ -14,6 +14,7 @@ import FavList from "./pages/YourList/YourList";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Quotes from "./pages/Quotes/Quotes";
+import Auth from './pages/Auth/Auth'
 
 import { Home } from "./pages/Home/Home";
 
@@ -26,8 +27,9 @@ function App() {
             <Route path="/hotels-list" element={<HotelsList />} />
             <Route path="/hotels/:id" element={<Hotel />} />
             <Route path="/yourList"  element={<FavList />}/>
-            <Route path="/Login" element={<Login />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/Login" element={<Login />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/quotes"  element={<Quotes />}/>
             <Route path='/teams' element={<Teams />}/>

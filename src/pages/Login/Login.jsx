@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
 import "./Login.css";
-import { FaUser, FaLock } from "react-icons/fa";
 
 const Login = () => {
   return(
     <div className="LoginMain">
       <div className="loginCard">
-        <h1>Log In</h1>
+        <h2>Log In</h2>
         <input type="username" placeholder="Type your username "  maxLength={20} />
         <input type="password" placeholder="**********" maxLength={30} />
         <div className="checkBox-div">
