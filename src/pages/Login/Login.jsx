@@ -1,22 +1,26 @@
-import { NavLink } from "react-router-dom";
-import "./Login.css";
+import { Field, Form, Formik, useFormik } from "formik";
 
-const Login = () => {
+const Login = () => {      
+//ADVANCED JE LOGIN !
   return(
-    <div className="LoginMain">
-      <div className="loginCard">
-        <h2>Log In</h2>
-        <input type="username" placeholder="Type your username "  maxLength={20} />
-        <input type="password" placeholder="**********" maxLength={30} />
-        <div className="checkBox-div">
-          <input type="checkbox" />
-          <p>By logging in, you agree to our Privacy Policy and Terms of Service.
-          We value your privacy and are committed to protecting your personal information.</p></div>
-        
-        <button type="submit" className="btn-login">Login</button>
-        <p>You not have account? <NavLink to={'/signUp'}><b style={{cursor:"pointer"}}>SignUp</b></NavLink>  </p>
-      </div>
-    </div>
+
+<Formik
+       initialValues={{ name: 'jared' }}
+     >
+       {props => (
+         <Form className="form-auth">
+           <Field  type="text" name="name" placeholder="Name" />
+           {/* <input
+             type="text"
+             onChange={props.handleChange}
+             onBlur={props.handleBlur}
+             value={props.values.name}
+             name="name"
+           /> */}
+           <button className="submit" type="submit">Submit</button>
+         </Form>
+       )}
+     </Formik>
   )
 }
 
