@@ -15,24 +15,68 @@ import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Quotes from "./pages/Quotes/Quotes";
 import Auth from './pages/Auth/Auth'
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 import { Home } from "./pages/Home/Home";
+import { useContext, useEffect } from "react";
+import { AppContext } from "./context/AppContext";
 
 function App() {
+  const { setLoggedInUser } = useContext(AppContext);
+
+  useEffect(() => {
+    const localLoggedInUser = localStorage.getItem("loggedInUser");
+    if (localLoggedInUser) {
+      setLoggedInUser(JSON.parse(localLoggedInUser));
+    } else {
+      setLoggedInUser(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const localLoggedInUser = localStorage.getItem("loggedInUser");
   return (
     <div className="app">
       <Navbar />
           <Routes>
-            <Route path="/"element={<Home />} />
-            <Route path="/hotels-list" element={<HotelsList />} />
-            <Route path="/hotels/:id" element={<Hotel />} />
-            <Route path="/yourList"  element={<FavList />}/>
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/auth" element={<Auth />} />
-            <Route path="/Login" element={<Login />} />
-            <Route path="/signUp" element={<SignUp />} />
-            <Route path="/quotes"  element={<Quotes />}/>
-            <Route path='/teams' element={<Teams />}/>
+            <Route path="/"element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>} />
+
+                <Route path="/auth" element={!localLoggedInUser ? <Auth /> : <Home/> } />
+            
+            <Route path="/hotels-list" element={
+              <ProtectedRoute>
+                <HotelsList/>
+              </ProtectedRoute>} />
+            <Route path="/hotels/:id" element={
+              <ProtectedRoute>
+                <Hotel/>
+              </ProtectedRoute>} />
+            <Route path="/yourList"  element={
+              <ProtectedRoute>
+                <FavList />
+              </ProtectedRoute>}/>
+            <Route path="/about-us" element={
+              <ProtectedRoute>
+                <AboutUs />
+              </ProtectedRoute>}/>
+            <Route path="/Login" element={
+              <ProtectedRoute>
+                <Login />
+              </ProtectedRoute>} />
+            <Route path="/signUp" element={
+              <ProtectedRoute>
+                <SignUp />
+              </ProtectedRoute>} />
+            <Route path="/quotes"  element={
+              <ProtectedRoute>
+                <Quotes />
+              </ProtectedRoute> }/>
+            <Route path='/teams' element={
+              <ProtectedRoute>
+                <Teams />
+              </ProtectedRoute>}/>
           </Routes>
       <Footer />
     </div>

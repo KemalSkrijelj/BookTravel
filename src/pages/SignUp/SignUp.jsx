@@ -3,9 +3,10 @@ import '../Auth/Auth.css'
 import { basicSchema } from '../../schemas'
 
 const onSubmit = async(values, actions) => {
-    console.log(values)
+    localStorage.setItem('user', JSON.stringify(values) )
     await new Promise((resolve) => setTimeout(resolve, 1000))
     actions.resetForm()
+    alert("Registration successful!");
 }
 
 const SignUp = () => {
@@ -20,7 +21,6 @@ const SignUp = () => {
         onSubmit,
       })
 
-      console.log(errors)
     
   return(
         <form onSubmit={handleSubmit} autoComplete="off" className='form-auth'>

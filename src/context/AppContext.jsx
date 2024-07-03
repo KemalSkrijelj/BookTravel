@@ -4,10 +4,13 @@ import { createContext, useState } from "react";
 const AppContext = createContext()
 
 function ContextProvider( {children} ) {
+  const [loggedInUser, setLoggedInUser] = useState(null);
   const [favoriteHotels, setFavoriteHotels] = useState([]);
   const values = {
     favoriteHotels,
-    setFavoriteHotels
+    setFavoriteHotels,
+    loggedInUser, 
+    setLoggedInUser
   }
   return(
     <AppContext.Provider value={values}>

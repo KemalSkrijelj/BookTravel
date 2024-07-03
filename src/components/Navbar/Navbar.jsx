@@ -1,7 +1,13 @@
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
 export function Navbar() {
+  // eslint-disable-next-line no-unused-vars
+  const { loggedInUser, setLoggedInUser } = useContext(AppContext);
+  // eslint-disable-next-line no-unused-vars
+  const navigate = useNavigate();
 
   function sendToLoginPage  () {
     window.location.href = '/yourList'
@@ -14,6 +20,7 @@ export function Navbar() {
             <h1>CheckInnNow</h1>
           </NavLink>
         </div>
+        {loggedInUser && (
         <div className="listing">
           
           <ul>
@@ -43,8 +50,17 @@ export function Navbar() {
                 isActive ? "navlink-active" : "navlink"}>{" "}<li>About us</li></NavLink>
 
           </ul>
-          <NavLink to={"/auth"}><button onClick={() => sendToLoginPage}>Log in</button></NavLink>
+          <button
+              onClick={() => {
+                setLoggedInUser(null);
+                localStorage.removeItem("loggedInUser");
+                navigate("auth");
+              }}
+            >
+              Logout
+            </button>
         </div>
+        )}
       </div>
     </header>
   );
