@@ -1,41 +1,73 @@
 .aboutUs{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   min-height: 100vh;
-  padding: 100px;
-  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url(../AboutUs/chicago-343941_1280.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top:150px ;
+  padding-top: 110px;
 
+}
+.div-whoWeAre{
+  margin: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 40px;
+  }:hover{
+    cursor:copy;
+  }
+  p{
+    width: 50%;
+    text-align: center;
+  }
+}
+.abt {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+
+}
+.aboutUs-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  height: 35rem;
+  border-radius: 10%;
+  padding: 10px;
+  box-shadow:  
+  inset 0 -3em 3em rgba(0, 103, 200, 0.7),
+  0 0 0 2px rgb(42, 11, 80),
+  0.3em 0.3em 1em rgba(50, 6, 40, 2.6);;
   h1{
     font-size: 30px;
-    text-decoration: underline;
-    margin-top: 0;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 2.5rem;
-    }
-    h1:last-child{
-      font-size: 1rem;
-      margin-top: 3rem;
-    }
-    h1:hover{
-      color: #ff863f;
-    }
-  
-    h2{
-    color: #FFFFFF;
-    margin: 2rem 1rem;
-    }
+  }
+  p{
 
-    p{
-      width: 70%;
-      color: #F0F0F0;
-    }
+  }
+  p:last-child {
+    width: 90%;
+    text-align: center;
+  }
+  img{
+    display: flex;
+    height: 300px;
+    width: 90%;
+    border-radius: 50%;
+  }
 }
 
+h2:hover{
+  cursor:copy;
+}

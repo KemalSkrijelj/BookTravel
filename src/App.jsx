@@ -4,7 +4,7 @@ import "./App.css";
 // import Greeting from "./components/Greeting/Greeting";
 import { Navbar } from "./components/Navbar/Navbar";
 import Footer  from "./components/Footer/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 import HotelsList from "./pages/Hotels/Hotels";
 import Hotel from "./pages/Hotel/Hotel";
@@ -23,6 +23,7 @@ import { AppContext } from "./context/AppContext";
 
 function App() {
   const { setLoggedInUser } = useContext(AppContext);
+  const navigate = useNavigate()
 
   useEffect(() => {
     const localLoggedInUser = localStorage.getItem("loggedInUser");
@@ -38,12 +39,13 @@ function App() {
     <div className="app">
       <Navbar />
           <Routes>
+            <Route path="/auth" element={!localLoggedInUser ? <Auth /> : <Home/> } />
+            {/* <Route path="/auth" element={!localLoggedInUser ? (<Route path="/auth" element={<Auth />} />) : (navigate("/"))} /> */}
+
             <Route path="/"element={
               <ProtectedRoute>
                 <Home />
               </ProtectedRoute>} />
-
-                <Route path="/auth" element={!localLoggedInUser ? <Auth /> : <Home/> } />
             
             <Route path="/hotels-list" element={
               <ProtectedRoute>
